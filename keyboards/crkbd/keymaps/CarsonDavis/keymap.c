@@ -1,13 +1,9 @@
-#include QMK_KEYBOARD_H
-#include "version.h"
-#define MOON_LED_LEVEL LED_LEVEL
+#include QMK_KEYBOARD_H 
 
 enum custom_keycodes {
   RGB_SLD = ML_SAFE_RANGE,
   ST_MACRO_0,
 };
-
-
 
 enum tap_dance_codes {
   DANCE_1,
@@ -38,6 +34,7 @@ enum tap_dance_codes {
   DANCE_27,
   DANCE_28,
 };
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_moonlander(
     TG(4),          TD(DANCE_3),        TD(DANCE_4),        TD(DANCE_5),        TD(DANCE_6),         TD(DANCE_7),                       TD(DANCE_16),    TD(DANCE_17),        TD(DANCE_18),       TD(DANCE_19),         TD(DANCE_20),   KC_BSLS,        
