@@ -35,7 +35,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TRNS,        KC_LEFT_GUI,         KC_LEFT_SHIFT,      KC_LEFT_ALT,        KC_LEFT_CTRL,       KC_TAB,                            KC_DOWN,          KC_4,                KC_5,                KC_6,                KC_KP_PLUS,      KC_TRNS,
     KC_TRNS,        KC_TRNS,             KC_TRNS,            KC_TRNS,            KC_ENTER,           KC_ESCAPE,                         KC_TRNS,          KC_1,                KC_2,                KC_3,                KC_KP_SLASH,     KC_TRNS,
                                                              KC_TRNS,            KC_TRNS,            KC_TRNS,                           KC_TRNS,          KC_KP_0,             KC_KP_DOT
-  ),omg
+  ),
   // symbols
   [5] = LAYOUT_split_3x6_3(
     KC_TRNS,        KC_TRNS,            KC_TRNS,             KC_TRNS,            KC_TRNS,             KC_TRNS,                           KC_TRNS,          KC_LPRN,             KC_RPRN,             KC_ASTR,             KC_PLUS,        KC_TRNS,
