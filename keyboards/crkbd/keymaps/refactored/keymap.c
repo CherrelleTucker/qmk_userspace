@@ -3,24 +3,24 @@
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // qwerty
   [0] = LAYOUT_split_3x6_3(
-    DF(1),          LT(0, KC_Q),        LT(0, KC_W),         LT(0, KC_E),        LT(0, KC_R),         LT(0, KC_T),                       LT(0, KC_Y),      LT(0, KC_U),         LT(0, KC_I),        LT(0, KC_O),          LT(0, KC_P),     KC_BSLS,
+    DF(1),          LT(0, KC_Q),        LT(0, KC_W),         LT(0, KC_E),        LT(0, KC_R),         LT(0, KC_T),                       LT(0, KC_Y),      LT(0, KC_U),         LT(0, KC_I),        LT(0, KC_O),          LT(0, KC_P),     DF(2),
     KC_BSPC,        MT(MOD_LGUI, KC_A), MT(MOD_LSFT, KC_S),  MT(MOD_LALT, KC_D), MT(MOD_LCTL, KC_F),  KC_G,                              KC_H,             MT(MOD_RCTL, KC_J),  MT(MOD_RALT, KC_K), MT(MOD_RSFT, KC_L),   LT(0, KC_QUOTE), LT(0, KC_COLON),
-    CW_TOGG,        LT(0, KC_Z),        LT(0, KC_X),         LT(0, KC_C),        LT(0, KC_V),         KC_B,                              KC_N,             KC_M,                KC_COMMA,           KC_DOT,               LT(0, KC_QUES),  DF(2),
-                                                             KC_ESCAPE,          LT(4,KC_BSPC),       LT(5,KC_TAB),                      LT(5,KC_ENTER),   LT(3,KC_SPACE),      KC_TRNS
+    CW_TOGG,        LT(0, KC_Z),        LT(0, KC_X),         LT(0, KC_C),        LT(0, KC_V),         KC_B,                              KC_N,             KC_M,                KC_COMMA,           KC_DOT,               LT(0, KC_QUES),  KC_SLASH,
+                                                             KC_ESCAPE,          LT(4,KC_BSPC),       LT(5,KC_TAB),                      LT(5,KC_ENTER),   LT(3,KC_SPACE),      KC_ESCAPE
   ),
   // colemak alpha
   [1] = LAYOUT_split_3x6_3(
-    DF(0),          LT(1, KC_Q),         LT(1, KC_W),        LT(1, KC_F),        LT(1, KC_P),         LT(1, KC_B),                       LT(1, KC_J),      LT(1, KC_L),         LT(1, KC_U),         LT(1, KC_Y),         LT(1, KC_QUOTE), KC_TRNS,
+    DF(0),          LT(1, KC_Q),         LT(1, KC_W),        LT(1, KC_F),        LT(1, KC_P),         LT(1, KC_B),                       LT(1, KC_J),      LT(1, KC_L),         LT(1, KC_U),         LT(1, KC_Y),         LT(1, KC_QUOTE), DF(2),
     KC_TRNS,        KC_A,                MT(MOD_LSFT, KC_R), KC_S,               KC_T,                KC_G,                              KC_M,             KC_N,                KC_E,                MT(MOD_RSFT, KC_I),  KC_O,            LT(1, KC_COLON),
-    KC_TRNS,        KC_Z,                KC_X,               KC_C,               KC_D,                KC_V,                              KC_K,             KC_H,                KC_COMMA,            KC_DOT,              LT(1, KC_QUES),  DF(2),
-                                                             KC_ESCAPE,          LT(4,KC_BSPC),       LT(5,KC_TAB),                      LT(5,KC_ENTER),   LT(3,KC_SPACE),      KC_TRNS
+    KC_TRNS,        KC_Z,                KC_X,               KC_C,               KC_D,                KC_V,                              KC_K,             KC_H,                KC_COMMA,            KC_DOT,              LT(1, KC_QUES),  KC_SLASH,
+                                                             KC_ESCAPE,          LT(4,KC_BSPC),       LT(5,KC_TAB),                      LT(5,KC_ENTER),   LT(3,KC_SPACE),      KC_ESCAPE
   ),
-  // colemak full
+  // colemak full    
   [2] = LAYOUT_split_3x6_3(
-    DF(0),          KC_Q,                KC_W,               KC_F,               KC_P,                KC_B,                              KC_J,             KC_L,                KC_U,                KC_Y,                KC_QUOTE,        KC_TRNS,
+    DF(0),          KC_Q,                KC_W,               KC_F,               KC_P,                KC_B,                              KC_J,             KC_L,                KC_U,                KC_Y,                KC_QUOTE,        DF(2),
     KC_TRNS,        KC_A,                MT(MOD_LSFT, KC_R), KC_S,               KC_T,                KC_G,                              KC_M,             KC_N,                KC_E,                MT(MOD_RSFT, KC_I),  KC_O,            LT(1, KC_COLON),
-    KC_TRNS,        LT(1, KC_Z),        LT(1, KC_X),         LT(1, KC_C),        LT(1, KC_D),         KC_V,                              KC_K,             KC_H,                KC_COMMA,            KC_DOT,              LT(1, KC_QUES),  DF(2),
-                                                             KC_ESCAPE,          LT(4,KC_BSPC),       LT(5,KC_TAB),                      LT(5,KC_ENTER),   LT(3,KC_SPACE),      KC_TRNS
+    KC_TRNS,        LT(1, KC_Z),        LT(1, KC_X),         LT(1, KC_C),        LT(1, KC_D),         KC_V,                              KC_K,             KC_H,                KC_COMMA,            KC_DOT,              LT(1, KC_QUES),  KC_SLASH,
+                                                             KC_ESCAPE,          LT(4,KC_BSPC),       LT(5,KC_TAB),                      LT(5,KC_ENTER),   LT(3,KC_SPACE),      KC_ESCAPE
   ),
   // arrows
   [3] = LAYOUT_split_3x6_3(
