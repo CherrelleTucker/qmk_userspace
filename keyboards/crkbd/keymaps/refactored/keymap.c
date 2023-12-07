@@ -8,14 +8,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     CW_TOGG,        LT(0, KC_Z),        LT(0, KC_X),         LT(0, KC_C),        LT(0, KC_V),         KC_B,                              KC_N,             KC_M,                KC_COMMA,           KC_DOT,               LT(0, KC_QUES),  KC_SLASH,
                                                              KC_ESCAPE,          LT(4,KC_BSPC),       LT(5,KC_TAB),                      LT(5,KC_ENTER),   LT(3,KC_SPACE),      KC_ESCAPE
   ),
-  // colemak alpha
+  // colemak full
   [1] = LAYOUT_split_3x6_3(
     DF(0),          LT(1, KC_Q),         LT(1, KC_W),        LT(1, KC_F),        LT(1, KC_P),         LT(1, KC_B),                       LT(1, KC_J),      LT(1, KC_L),         LT(1, KC_U),         LT(1, KC_Y),         LT(1, KC_QUOTE), DF(2),
     KC_TRNS,        KC_A,                MT(MOD_LSFT, KC_R), KC_S,               KC_T,                KC_G,                              KC_M,             KC_N,                KC_E,                MT(MOD_RSFT, KC_I),  KC_O,            LT(1, KC_COLON),
     KC_TRNS,        KC_Z,                KC_X,               KC_C,               KC_D,                KC_V,                              KC_K,             KC_H,                KC_COMMA,            KC_DOT,              LT(1, KC_QUES),  KC_SLASH,
                                                              KC_ESCAPE,          LT(4,KC_BSPC),       LT(5,KC_TAB),                      LT(5,KC_ENTER),   LT(3,KC_SPACE),      KC_ESCAPE
   ),
-  // colemak full    
+  // colemak alpha    
   [2] = LAYOUT_split_3x6_3(
     DF(0),          KC_Q,                KC_W,               KC_F,               KC_P,                KC_B,                              KC_J,             KC_L,                KC_U,                KC_Y,                KC_QUOTE,        DF(2),
     KC_TRNS,        KC_A,                MT(MOD_LSFT, KC_R), KC_S,               KC_T,                KC_G,                              KC_M,             KC_N,                KC_E,                MT(MOD_RSFT, KC_I),  KC_O,            LT(1, KC_COLON),
@@ -34,7 +34,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TRNS,        KC_TRNS,             KC_TRNS,            KC_TRNS,            KC_TRNS,            KC_TRNS,                           KC_UP,            KC_7,                KC_8,                KC_9,                KC_KP_MINUS,     KC_ASTR,
     KC_TRNS,        KC_LEFT_GUI,         KC_LEFT_SHIFT,      KC_LEFT_ALT,        KC_LEFT_CTRL,       KC_TAB,                            KC_DOWN,          KC_4,                KC_5,                KC_6,                KC_KP_PLUS,      KC_TRNS,
     KC_TRNS,        KC_TRNS,             KC_TRNS,            KC_TRNS,            KC_ENTER,           KC_ESCAPE,                         KC_TRNS,          KC_1,                KC_2,                KC_3,                KC_KP_SLASH,     KC_TRNS,
-                                                             KC_TRNS,            KC_TRNS,            KC_TRNS,                           KC_TRNS,          KC_KP_0,             KC_KP_DOT
+                                                             KC_TRNS,            KC_TRNS,            KC_TRNS,                           KC_TRNS,          KC_0,                KC_KP_DOT
   ),
   // symbols
   [5] = LAYOUT_split_3x6_3(
